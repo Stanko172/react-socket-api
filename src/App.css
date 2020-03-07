@@ -1,38 +1,36 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', sans-sans-serif;
+}
+
+button{
+  font-family: 'Roboto', sans-sans-serif;
+  padding: 0.5em;
+}
+
+.container{
+  display: grid;
+  grid-gap: 0.7em;
+  grid-template-columns: repeat(4, auto);
+}
+
+.card{
+  background: lightgrey;
+}
+
+.card__header{
+  padding: 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card__header span{
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.card__body{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  padding: 0.5em;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
